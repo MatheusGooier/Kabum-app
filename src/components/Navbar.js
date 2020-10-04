@@ -7,7 +7,7 @@ class Navbar extends Component{
 
     render(){
         return(
-            <nav className="nav-wrapper ">
+            <nav className="nav-wrapper blue darken-3" style={{lineHeight: "106px", fontSize: "1.4rem",  height: "106px"}}>
                 <div className="container">
                     <Link to="/" className="brand-logo">
                     <img src="https://static.kabum.com.br/conteudo/temas/001/imagens/topo/logo_kabum_.png" alt="Kabum" />

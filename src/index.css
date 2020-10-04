@@ -36,7 +36,7 @@
   align-self:center;
 }
 
-nav {
+/* nav {
   height: 106px;
   line-height: 106px;
 }
@@ -53,15 +53,15 @@ nav .button-collapse i {
 
 nav .brand-logo { 
   font-size: 1.6rem; 
-}
+} */
 
 @media only screen{
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-      height: 106px;
+      /* height: 106px;
       line-height: 106px;
-      background-color: #0581c1;
-      margin-bottom: 10px;
-  }
+      background-color: #0581c1; 
+      margin-bottom: 10px;  */
+  } */
   html {
     overflow-x: hidden;
   }
