@@ -21,7 +21,7 @@ import { addToCart  } from './actions/cartActions'
                                 <img src={this.props.items[this.props.match.params.id].img} alt={this.props.items[this.props.match.params.id].title}/>
                             </div>
                             <div className="col s6" ><br/>
-                                <label className="large" style={{fontSize: "1.4rem"}}><b>Produto:</b> {this.props.items[this.props.match.params.id].title}</label><br/><br/>
+                                <label className="large " style={{fontSize: "1.4rem"}}><b>Produto:</b> {this.props.items[this.props.match.params.id].title}</label><br/><br/>
                                 <label><b>Descrição:</b> {this.props.items[this.props.match.params.id].desc}</label><br/>
                                 <label><b>Valor: R$ {this.props.items[this.props.match.params.id].price},00</b></label><br/><br/><br/>
                                 <div className="input-field row s4">
