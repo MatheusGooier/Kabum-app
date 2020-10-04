@@ -18,7 +18,7 @@ class Navbar extends Component{
                             <div>
                                 
                                 {this.props.qtd > 0  ? (
-                                        <Link to="/cart">Carrinho <span style={{color: "#90a4ae  "}}>({this.props.qtd})</span></Link>
+                                        <Link to="/cart">Carrinho <span style={{color: "#90a4ae  "}}>({this.props.addedItems.length})</span></Link>
                                     ) : (
                                         <Link to="/cart">Carrinho <span style={{color: "#90a4ae  "}}>(vazio)</span></Link>
                                     )}
