@@ -15,6 +15,8 @@ import { Link } from 'react-router-dom'
 
     handlefilterClear = ()=>{
         this.props.filterItems();
+        document.getElementById('filteredTitle').value = ''
+        document.getElementById('filteredId').value = ''
     }
 
     render(){
