@@ -1,4 +1,4 @@
-import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,FILTER_ITEMS } from '../actions/action-types/cart-actions'
+import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,FILTER_ITEMS,CLEAR_CART } from '../actions/action-types/cart-actions'
 
 function Get(){
     var Httpreq = new XMLHttpRequest(); 
@@ -48,7 +48,6 @@ const cartReducer= (state = initState,action)=>{
         let itemToRemove= state.addedItems.find(item=> action.id === item.id)
         let new_items = state.addedItems.filter(item=> action.id !== item.id)
         let newTotal = state.total - (itemToRemove.price * itemToRemove.quantity )
-        console.log(itemToRemove)
         return{
             ...state,
             addedItems: new_items,
@@ -128,6 +127,15 @@ const cartReducer= (state = initState,action)=>{
             }    
         }
 
+    }
+  }
+
+  if (action.type === CLEAR_CART){
+    return{
+        ...state,
+        addedItems: [],
+        total: 0,
+        qtd: 0
     }
   }
 

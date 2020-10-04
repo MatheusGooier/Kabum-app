@@ -10,11 +10,15 @@ class Navbar extends Component{
             <nav className="nav-wrapper blue darken-3" style={{lineHeight: "106px", fontSize: "1.4rem",  height: "106px"}}>
                 <div className="container">
                     <Link to="/" className="brand-logo">
-                    <img src="https://static.kabum.com.br/conteudo/temas/001/imagens/topo/logo_kabum_.png" alt="Kabum" />
+                    <img src="https://static.kabum.com.br/conteudo/temas/001/imagens/topo/logo_kabum_.png" alt="Kabum"/>
                     </Link>
                     <ul className="right">
                         <li><Link to="/">Produtos</Link></li>
-                        <li><Link to="/cart">Carrinho  <span className="blue-grey">{this.props.addedItems.length}</span></Link>
+                        <li><Link to="/cart">Carrinho  
+                            <a class="btn-floating btn-small deep-orange darken-2">
+                                {this.props.addedItems.length}
+                            </a>
+                        </Link>
                         </li>                        
                     </ul>
                 </div>

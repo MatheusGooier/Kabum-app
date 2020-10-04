@@ -36,7 +36,7 @@ class Cart extends Component{
                                     <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
                                     <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
                                 </div>
-                                <button className="waves-effect waves-light btn red darken-4 remove" onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
+                                <button className="waves-effect waves-light btn red darken-4 remove" onClick={()=>{this.handleRemove(item.id)}}>Remover</button>
                             </div>   
                         </li>
                     )
@@ -45,7 +45,7 @@ class Cart extends Component{
         (
             <p></p>
         )
-        
+
        return(
             <div className="container" style={{marginBottom: "80px"}}>
                 <div className="cart">

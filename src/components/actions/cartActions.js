@@ -1,4 +1,4 @@
-import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,FILTER_ITEMS} from './action-types/cart-actions'
+import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,FILTER_ITEMS,CLEAR_CART} from './action-types/cart-actions'
 
 
 export const addToCart= (id, qtdAdd)=>{
@@ -35,6 +35,12 @@ export const filterItems=(id, title)=>{
         type: FILTER_ITEMS,
         id, 
         title
+    }
+}
+
+export const ClearCart=()=>{
+    return{
+        type: CLEAR_CART
     }
 }
 
