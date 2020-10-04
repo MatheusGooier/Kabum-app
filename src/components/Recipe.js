@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 class Recipe extends Component{
-    
-
-
 
     render(){
-  
         return(
             <div className="container">
                 <div className="collection">

@@ -16,7 +16,7 @@ class Navbar extends Component{
                     
                     <ul className="right">
                         <li><Link to="/">Produtos</Link></li>
-                        <li><Link to="/cart">Carrinho<span className="badge blue-grey lighten-4">{this.props.addedItems.length}</span></Link>
+                        <li><Link to="/cart">Carrinho  <span className="blue-grey">{this.props.addedItems.length}</span></Link>
                         </li>                        
                     </ul>
                 </div>

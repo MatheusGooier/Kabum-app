@@ -38,15 +38,13 @@ import { Link } from 'react-router-dom'
                  </div>
             )
         })
-
         return(
-            <div className="container" style={{marginBottom: "80px"}}>
+            <div className="container" style={{marginBottom: "80px"}} >
                 <h3 className="center">Produtos</h3>                           
                 <div className="row">
                     <div className="input-field col s4">
                     <label>Buscar por nome:</label>
                         <input id="filteredTitle" type="text" onChange={()=>{this.handlefilter()}} />
-                        
                     </div>
                     <div className="input-field col s4">
                     <label>Buscar por Id:</label>

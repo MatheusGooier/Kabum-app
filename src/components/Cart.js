@@ -22,35 +22,30 @@ class Cart extends Component{
             (  
                 this.props.items.map(item=>{
                     return(
-                       
                         <li className="collection-item avatar" key={item.id}>
-                                    <div className="item-img"> 
-                                        <img src={item.img} alt={item.img} className=""/>
-                                    </div>
+                            <div className="item-img"> 
+                                <img src={item.img} alt={item.img} className=""/>
+                            </div>
                                 
-                                    <div className="item-desc">
-                                        <span className="title">{item.title}</span>
-                                        <p>{item.desc}</p>
-                                        <p><b>Preço: R$ {item.price},00</b></p> 
-                                        <p>
-                                            <b>Quantidade: {item.quantity}</b> 
-                                        </p>
-                                        <div className="add-remove">
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
-                                        </div>
-                                        <button className="waves-effect waves-light btn red darken-4 remove" onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
-                                    </div>
-                                    
-                                </li>
-                         
+                            <div className="item-desc">
+                                <span className="title">{item.title}</span>
+                                <p>{item.desc}</p>
+                                <p><b>Preço: R$ {item.price},00</b></p> 
+                                <p><b>Quantidade: {item.quantity}</b></p>
+                                <div className="add-remove">
+                                    <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
+                                    <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
+                                </div>
+                                <button className="waves-effect waves-light btn red darken-4 remove" onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
+                            </div>   
+                        </li>
                     )
                 })
             ):
-
-             (
-                <p></p>
-             )
+        (
+            <p></p>
+        )
+        
        return(
             <div className="container" style={{marginBottom: "80px"}}>
                 <div className="cart">

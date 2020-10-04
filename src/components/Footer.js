@@ -7,19 +7,11 @@ class Footer extends Component{
     render(){
   
         return(
-            
-            <nav className="nav-wrapper row"  style={{fontSize: "0.7rem",
-            position: "fixed",
-            bottom: 0,
-            marginBottom: "0px",
-            height: "53px",
-            lineHeight: "53px",
-            zIndex: 999}}>
+            <nav className="nav-wrapper row"  style={{fontSize: "0.7rem", bottom: 0, marginBottom: "0px", height: "53px", lineHeight: "53px", zIndex: 999}}>
                 <div className="col s6 offset-s9">
                     Site desenvolvido por <a href="https://www.linkedin.com/in/matheusdsouza/">Matheus Cometti</a>
                 </div>
             </nav>        
-            
         )
     }
 }
