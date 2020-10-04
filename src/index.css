@@ -1,0 +1,74 @@
+.box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+.material-icons{
+  font-size: 2.4em;
+  cursor: pointer;
+}
+.card{
+  width: 300px;
+}
+.card .card-image .card-title{
+  color: black;
+  font-weight: 400
+}
+.cart{
+  margin-top:40px;
+}
+.collection .collection-item{
+  display: flex;
+}
+.collection-item.avatar .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #039be5;
+  display: block;
+  margin-bottom: 20px;
+  
+}
+.collection .collection-item img{
+  width: 150px;
+  margin-right: 25px;
+}
+.item-desc{
+  align-self:center;
+}
+
+nav {
+  height: 106px;
+  line-height: 106px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  height: 106px;
+  line-height: 106px;
+}
+
+nav .button-collapse i {
+  height: 106px;
+  line-height: 106px;
+}
+
+nav .brand-logo { 
+  font-size: 1.6rem; 
+}
+
+@media only screen and (min-width: 601px){
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+      height: 106px;
+      line-height: 106px;
+      background-color: #0581c1;
+      margin-bottom: 10px;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #9e9e9e;
+}
